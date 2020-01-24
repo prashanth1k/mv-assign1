@@ -1,12 +1,18 @@
 html {
-  /* Setting a base font size of 10px give us easier rem calculations
-       Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
-     */
-  font-size: 10px;
+  font-size: 12px;
+}
+
+#title {
+  padding-top: 2em;
+}
+
+.caption {
+  color: grey;
+  font-size: 1rem;
 }
 
 body {
-  font-family: Arial,;
+  font-family: Arial;
   font-size: 1.6rem;
   line-height: 1.5;
   text-align: center;
@@ -24,11 +30,9 @@ h3 {
   margin-bottom: 0;
 }
 
-
-@media (max-width: 460px) {
+@media (max-width: 480px) {
   h1 {
-    font-size: 3.5rem;
-    line-height: 1.2;
+    font-size: 4rem;
   }
 }
 
@@ -45,27 +49,20 @@ a:visited {
 }
 
 #main {
-  margin: 30px 8px;
+  margin: 30px;
   padding: 15px;
   border-radius: 5px;
   background: #eee;
 }
 
-@media (max-width: 460px) {
-  #main {
-    margin: 0;
-  }
-}
-
 img {
-  max-width: 100%;
-  display: block;
+  max-width: 80%;
   height: auto;
-  margin: 0 auto;
+  margin: auto;
+  display: block;
 }
 
-#img-div {
-  background: white;
+#fig {
   padding: 10px;
   margin: 0;
 }
@@ -73,12 +70,6 @@ img {
 #img-caption {
   margin: 15px 0 5px 0;
   color: gray;
-}
-
-@media (max-width: 460px) {
-  #img-caption {
-    font-size: 1.4rem;
-  }
 }
 
 #headline {
@@ -112,4 +103,3 @@ blockquote {
   color: gray;
   font-style: italic;
 }
-
